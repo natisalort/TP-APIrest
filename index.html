@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Api Rest</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Detalle del personal</h1>
+    </header>
+    <nav>
+        <div class="botones">
+            <button class="news" id="new">+Empleado</button>
+            <button class="news" id="rest">Quitar empleado</button>
+            <div class="buscador" id="buscador">
+                <input class="news" id="buscar" placeholder="Ingrese apellido"></input>
+                <button class="news" id="buscarEmpleado">Buscar</button>
+            </div>
+           
+            
+        </div>
+
+    </nav>
+    <main class="lista" id="showList">
+        <div class="displayOf formulario" id="ingreso">
+            <h2>Ingresar empleado</h2>
+            <input id="nombre" type="text" placeholder="Nombre">
+            <input id="apellido" type="text" placeholder="Apellido">
+            <input id="area" type="text" placeholder="Area de trabajo">
+            <input id="domicilio" type="text" placeholder="Domicilio">
+           
+           <button class="botonForm" id="agregar">Agregar</button>
+           <button class="botonForm" id="cerrar">Cerrar</button>
+           <p id="confirm"></p>
+           
+        </div>
+        <div class="displayOf formulario" id="formEliminar">
+           <h3>Eliminar empleado</h3>
+            <input id="eliminar" type="number" placeholder="ingrese ID">
+            <button class="news" id="quitar">Quitar empleado</button><br>
+            <p id="aviso"></p><br>
+            <button class="botonForm" id="cerrarQuitar">Cerrar</button>
+        </div>
+    </main>
+    <script src="./script.js"></script>
+    
+</body>
+
+</html>
